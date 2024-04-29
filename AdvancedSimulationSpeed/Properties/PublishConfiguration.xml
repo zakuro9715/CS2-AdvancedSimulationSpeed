@@ -34,9 +34,12 @@ AdvancedSimulationSpeed provides more options and more information.
 The maximum speed is limited to 8x by the game code. Because of this limitation is hard-coded, it cannot be changed by MOD.
 	</LongDescription>
 	<!--Thumbnail-->
-	<Thumbnail Value="Properties/Thumbnail.png" />
+	<Thumbnail Value="../Images/Thumbnail.png" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="" />
+	<Screenshot Value="../Images/Screenshot_fast.png" />
+	<Screenshot Value="../Images/Screenshot_slow.png" />
+	<Screenshot Value="../Images/Screenshot_fast_mini.png" />
+	<Screenshot Value="../Images/Screenshot_slow_mini.png" />
 	<!--Tag, can be set multiple times-->
 	<Tag Value="Code" />
 	<!--Link to the forum post where the mod can be discussed-->
