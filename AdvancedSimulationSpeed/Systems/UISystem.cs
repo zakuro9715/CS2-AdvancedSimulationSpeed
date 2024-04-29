@@ -72,8 +72,8 @@ namespace AdvancedSimulationSpeed.Systems
                 var oldSpeed = GetSelectedSpeeed();
                 var newSpeed = Mod.Setting.ModeSelection switch
                 {
-                    Setting.Mode.Doubler => SelectedSpeed *= math.pow(2, n),
-                    Setting.Mode.FixedStep => SelectedSpeed += n * ((oldSpeed, n) switch
+                    Setting.Mode.Doubler => SelectedSpeed * math.pow(2, n),
+                    Setting.Mode.FixedStep => SelectedSpeed + (n * ((oldSpeed, n) switch
                     {
                         (_, 0) => 0, // No Change
                         (1, > 0) => Mod.Setting.StepValue - 1, // FixedStep Mode is 0-based step. like 1 2 4 6 8. So when value == 1, add StepValue - 1 
@@ -81,14 +81,15 @@ namespace AdvancedSimulationSpeed.Systems
                         ( > 1, _) => Mod.Setting.StepValue,
                         ( < 1, _) => Mod.Setting.StepValueWhenLessThanOne,
                         (var x1, var x2) => throw new Exception($"Unreachable: ({x1}, {x2})")
-                    }),
+                    })),
                     var e => throw new Exception($"Invalid enum value {e}")
                 };
-                if (math.min(oldSpeed, newSpeed) < 1 &&  math.max(oldSpeed, newSpeed) > 1)
+                if (math.min(oldSpeed, newSpeed) < 1 && math.max(oldSpeed, newSpeed) > 1)
                 {
                     // Stop once at 1x speed.
-                    SelectedSpeed = 1;
+                    newSpeed = 1;
                 }
+                SelectedSpeed = math.clamp(newSpeed, 0, 8);
             }
           ));
 
