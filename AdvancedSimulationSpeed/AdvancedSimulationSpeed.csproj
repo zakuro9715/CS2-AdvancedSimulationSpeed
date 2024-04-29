@@ -95,4 +95,7 @@
 		<EmbeddedResource Include="Locales\*.json" />
 	</ItemGroup>
 
+    <Target Name="BuildUI" AfterTargets="AfterBuild">
+      <Exec Command="npm run build" WorkingDirectory="$(SolutionDir)/UI" />
+    </Target>
 </Project>

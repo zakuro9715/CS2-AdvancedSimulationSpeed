@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedSimulationSpeed", "AdvancedSimulationSpeed\AdvancedSimulationSpeed.csproj", "{41528723-3D05-441D-8B28-1B4F5E80F3F6}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "UI", "UI\UI.esproj", "{FA4DE9FA-330B-4688-9BD5-079039D3B0A0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{41528723-3D05-441D-8B28-1B4F5E80F3F6} = {41528723-3D05-441D-8B28-1B4F5E80F3F6}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
