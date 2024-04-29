@@ -62,5 +62,6 @@ First release.
 - Display selected speed and **actual** simulation speed.
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
-	<ExternalLink Type="" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed" />
+	<ExternalLink Type="x" Url="https://x.com/zakuro_cs2" />
 </Publish>
