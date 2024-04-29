@@ -1,6 +1,6 @@
 ﻿<Publish>
 	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
-	<ModId Value="" />
+	<ModId Value="79794" />
 	<!--Name of the mod to display to players-->
 	<DisplayName Value="AdvancedSimulationSpeed" />
 	<!--Short description of the mod-->
@@ -36,30 +36,20 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 	<!--Thumbnail-->
 	<Thumbnail Value="../Images/Thumbnail.png" />
 	<!--Screenshot, can be set multiple times-->
-	<Screenshot Value="../Images/Screenshot_fast.png" />
-	<Screenshot Value="../Images/Screenshot_slow.png" />
-	<Screenshot Value="../Images/Screenshot_fast_mini.png" />
-	<Screenshot Value="../Images/Screenshot_slow_mini.png" />
+	<Screenshot Value="../Images/Thumbnail.png" />
 	<!--Tag, can be set multiple times-->
-	<Tag Value="Code" />
+	<Tag Value="Code Mod" />
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0" />
+	<ModVersion Value="1.0.1" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="74417" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog>
-First release.
-
-- Provide more simulation speed options like 0.25x or 8x.
-- Multiple modes for selecting speed.
-	- Double / Harf speed (Default)
-	- Fixed step
-	- Display Only
-- Display selected speed and **actual** simulation speed.
+		- Fix UI not included.
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="github" Url="https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed" />
