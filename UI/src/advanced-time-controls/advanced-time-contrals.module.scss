@@ -1,0 +1,55 @@
+﻿.advanced-time-controls {
+  --iconHeight: 19rem;
+  --iconWidth: 19rem;
+
+  --buttonWidth: 40rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--buttonWidth);
+  height: 100%;
+
+  --iconColor: var(--accentColorNormal);
+  background-color: transparent;
+  border: none;
+
+  &--left {
+    border-top-left-radius: var(--toolbarFieldRadius);
+    border-bottom-left-radius: var(--toolbarFieldRadius);
+  }
+
+  &--right {
+    border-top-right-radius: var(--toolbarFieldRadius);
+    border-bottom-right-radius: var(--toolbarFieldRadius);
+  }
+
+  &:hover {
+    background-color: var(--toolbarFieldColor-hover);
+  }
+}
+
+.center-box {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  height: var(--iconHeight);
+  width: var(--iconWidth);
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Options.SECTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod]": "Advanced Simulation Speed",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "モード",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "シミュレーション速度変更のモード",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "ステップ値",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "ステップモードにおける、ステップごとの増加量",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "倍々モード（デフォルト）",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "ステップモード",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "ディスプレイモード"
+}
