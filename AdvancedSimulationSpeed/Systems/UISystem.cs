@@ -96,11 +96,6 @@ namespace AdvancedSimulationSpeed.Systems
             Mod.log.Info("UISystem OnCreate Done");
         }
 
-        private void Setting_onSettingsApplied(Game.Settings.Setting setting)
-        {
-            throw new NotImplementedException();
-        }
-
         protected override void OnUpdate() {
             base.OnUpdate();
 
