@@ -49,8 +49,6 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 	<Dependency Id="74417" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog>
-## 1.0
-
 First release.
 
 - Provide more simulation speed options like 0.25x or 8x.
@@ -59,7 +57,6 @@ First release.
 	- Fixed step
 	- Display Only
 - Display selected speed and **actual** simulation speed.
-
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="" Url="" />
