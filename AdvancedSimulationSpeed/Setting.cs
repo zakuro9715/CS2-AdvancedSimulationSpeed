@@ -62,6 +62,7 @@ namespace AdvancedSimulationSpeed
         {
             ModeSelection = Mode.Doubler;
             StepValue = 2;
+            DisplayActualSpeed = true;
         }
     }
 }

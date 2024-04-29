@@ -1,4 +1,8 @@
-﻿## 1.0.1
+﻿## 1.0.2
+
+- Enable display actual speed by default
+
+## 1.0.1
 
 - Fix UI not included.
 
