@@ -31,8 +31,3 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 
 - Directry input value in textbox
 - Change option panel.
-
-## Known Issues
-
- ExtraUIScreens (required by Extended Transport Manager) conflicts my MOD.
- I'm trying to solve problem. So disable ExtraUIScreens for now.

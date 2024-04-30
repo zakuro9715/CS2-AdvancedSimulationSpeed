@@ -1,6 +1,11 @@
-﻿## 1.0.2
+﻿## 1.0.3
 
-- Enable display actual speed by default
+- Optimize and cleanup UI Code.
+- Fix UI errors, no longer conflicts with Extra UI Screens Mod.
+
+## 1.0.2
+
+- Enable display actual speed by default.
 
 ## 1.0.1
 
