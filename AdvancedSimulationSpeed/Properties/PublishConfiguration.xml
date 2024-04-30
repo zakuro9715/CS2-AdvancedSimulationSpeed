@@ -32,6 +32,11 @@ AdvancedSimulationSpeed provides more options and more information.
 ## Limitation
 
 The maximum speed is limited to 8x by the game code. Because of this limitation is hard-coded, it cannot be changed by MOD.
+
+## Known Issues
+
+ ExtraUIScreens (required by Extended Transport Manager) conflicts my MOD. 
+ I'm trying to solve problem. So disable ExtraUIScreens for now.
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="../Images/Thumbnail.png" />
