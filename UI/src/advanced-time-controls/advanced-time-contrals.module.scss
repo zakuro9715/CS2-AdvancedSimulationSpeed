@@ -21,7 +21,7 @@
   height: 100%;
 
   --iconColor: var(--accentColorNormal);
-  background-color: transparent;
+  background-color: var(--toolbarFieldColor);
   border: none;
 
   &--left {
@@ -47,6 +47,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  background-color: var(--toolbarFieldColor);
 }
 
 .icon {

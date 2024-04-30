@@ -1,19 +1,20 @@
 import { ModuleRegistryExtend } from "cs2/modding";
 import { useValue, bindValue, trigger } from "cs2/api";
-import { Button, Icon, UISound } from "cs2/ui";
-import { getModuleComponent } from "../utils/modding";
+import { Button, Icon } from "cs2/ui";
+import { time } from "cs2/bindings";
+import { getModuleComponent, getModuleClasses } from "../utils/modding";
 import styles from "./advanced-time-contrals.module.scss";
 import mod from "../../mod.json";
 
 const toolbarFieldPath =
   "game-ui/game/components/toolbar/components/field/field.tsx";
-const Field = getModuleComponent(toolbarFieldPath, "Field");
-const Divider = getModuleComponent(toolbarFieldPath, "Divider");
-const IconButton = getModuleComponent(
-  "game-ui/common/input/button/icon-button.tsx",
-  "IconButton",
+const fieldStyles = getModuleClasses<{ field: any; content: any }>(
+  "game-ui/game/components/toolbar/components/field/field.module.scss",
 );
+const Divider = getModuleComponent(toolbarFieldPath, "Divider");
 
+// When pausing, time.simulationSpeed$ returns `m_SpeedBeforePause`.
+// But we want raw selectedSpeed value. So use another binding.
 const selectedSpeed$ = bindValue<number>(mod.id, "selectedSpeed");
 const displayActualSpeed$ = bindValue<boolean>(mod.id, "displayActualSpeed");
 const displayOnlyMode$ = bindValue<boolean>(mod.id, "displayOnlyMode");
@@ -32,13 +33,14 @@ export const AdvancedTimeControls: ModuleRegistryExtend =
     const actualSpeed = useValue(actualSpeed$);
     const displayOnlyMode = useValue(displayOnlyMode$);
     const displayActualSpeed = useValue(displayActualSpeed$);
+    //const paused = useValue(time.simulationPaused$);
 
     selectedSpeed$.subscribe(requestRefresh);
 
     const left = (
       <>
         <Button
-          debugName="SpeedLeftButton"
+          focusKey="ADVANCED_SIMULATION_SPEEED_PREV_SPEED"
           className={`${styles.button} ${styles["button--left"]}`}
           onSelect={prevSpeed}
         >
@@ -61,7 +63,7 @@ export const AdvancedTimeControls: ModuleRegistryExtend =
       <>
         <Divider />
         <Button
-          debugName="SpeedRightButton"
+          focusKey="ADVANCED_SIMULATION_SPEEED_NEXT_SPEED"
           className={`${styles.button} ${styles["button--right"]}`}
           onSelect={nextSpeed}
         >
@@ -76,13 +78,13 @@ export const AdvancedTimeControls: ModuleRegistryExtend =
     return (
       <>
         <Component {...otherProps}>{children}</Component>
-        <Field className={styles["advanced-time-controls"]}>
-          <div className={styles.content}>
-            {!displayOnlyMode && left}
-            {center}
-            {!displayOnlyMode && right}
-          </div>
-        </Field>
+        <div
+          className={`${fieldStyles.field} ${styles["advanced-time-controls"]}`}
+        >
+          {!displayOnlyMode && left}
+          {center}
+          {!displayOnlyMode && right}
+        </div>
       </>
     );
   };
