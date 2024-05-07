@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{C709A82A-7E65-4112-9C66-0B1086F92F8F}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
+		crowdin.yml = crowdin.yml
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
