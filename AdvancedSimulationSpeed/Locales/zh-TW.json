@@ -1,0 +1,12 @@
+﻿{
+  "Options.SECTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod]": "Advanced Simulation Speed",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "Mode",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "Select the mode for selecting simulation speed.",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "Fixed Step Value",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "Value of increase per step for fixed step mode.",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "Double / Half (Default)",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "Fixed Step",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "Display Only",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "Display Actual Speed",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "Display Actual Speed"
+}
