@@ -38,3 +38,11 @@ Thank you to the following people for their contributions:
 
 - Spanish translation by [elGendo87](https://twitter.com/elGendo87)
 - Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
+
+## Translation
+
+Welcome to contribute to the translation.
+
+You can contribute to the translation in the following ways:
+- [Crowdin](https://crowdin.com/project/cs2-advancedsimulationspeed)
+- [Edit files and create a pull request](https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed/tree/main/AdvancedSimulationSpeed/Locales)
