@@ -1,0 +1,3 @@
+files:
+  - source: "/AdvancedSimulationSpeed/Locales/*.json"
+    translation: "/AdvancedSimulationSpeed/%locale%.json"
