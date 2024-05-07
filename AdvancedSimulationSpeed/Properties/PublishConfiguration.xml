@@ -32,6 +32,15 @@ AdvancedSimulationSpeed provides more options and more information.
 ## Limitation
 
 The maximum speed is limited to 8x by the game code. Because of this limitation is hard-coded, it cannot be changed by MOD.
+
+
+## Credits
+
+Thank you to the following people for their contributions:
+
+- Spanish translation by [elGendo87](https://twitter.com/elGendo87)
+- Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
+
 	</LongDescription>
 	<!--Thumbnail-->
 	<Thumbnail Value="../Images/Thumbnail.png" />

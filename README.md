@@ -31,3 +31,10 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 
 - Directry input value in textbox
 - Change option panel.
+
+## Credits
+
+Thank you to the following people for their contributions:
+
+- Spanish translation by [elGendo87](https://twitter.com/elGendo87)
+- Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
