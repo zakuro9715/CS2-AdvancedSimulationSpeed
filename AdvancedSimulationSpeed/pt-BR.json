@@ -1,10 +1,12 @@
 ﻿{
-  "Options.SECTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod]": "Advanced Simulation Speed",
-  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "モード",
-  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "シミュレーション速度変更のモード",
-  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "ステップ値",
-  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "ステップモードにおける、ステップごとの増加量",
-  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "倍々モード（デフォルト）",
-  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "ステップモード",
-  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "ディスプレイモード"
+  "Options.SECTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod]": "시뮬레이션 속도 표시(Advanced Simulation Speed)",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "시뮬 속도 모드",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "사뮬레이션 속도를 위한 모드를 선택해주세요.",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "고정 단계 배율",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "고정 단계 모드의 단계별 증가 값입니다.",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "두배 / 절반 (기본값)",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "고정 단계",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "표시 전용",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "실제 시뮬속도 표시",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "실제 시뮬레이션 속도롤 표시합니다."
 }
