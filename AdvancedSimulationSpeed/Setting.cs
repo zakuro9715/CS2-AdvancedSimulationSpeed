@@ -43,7 +43,7 @@ namespace AdvancedSimulationSpeed
         }
 
         [SettingsUISection(kSection)]
-        public Mode ModeSelection{ get; set; }
+        public Mode ModeSelection { get; set; }
 
         private bool StepValueDisabled => ModeSelection != Mode.FixedStep;
 

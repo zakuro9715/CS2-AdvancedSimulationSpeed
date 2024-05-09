@@ -33,7 +33,7 @@ namespace AdvancedSimulationSpeed.Utils
             Action = action;
         }
 
-        public static Throttle BySeconds(float durationSec, Action action) => new Throttle(durationSec, action);
+        public static Throttle BySeconds(float durationSec, Action action) => new(durationSec, action);
         public static Throttle ByMilliSeconds(float durationMilliSec, Action action) => BySeconds(durationMilliSec / 1000f, action);
 
         public void Reset()

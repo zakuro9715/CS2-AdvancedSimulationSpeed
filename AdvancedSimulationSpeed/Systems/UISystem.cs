@@ -45,17 +45,19 @@ namespace AdvancedSimulationSpeed.Systems
         private bool DisplayActualSpeed => Mod.Setting.DisplayActualSpeed;
         private bool DisplayOnlyMode => Mod.Setting.ModeSelection == Setting.Mode.DisplayOnly;
 
-        private void Refresh() {
+        private void Refresh()
+        {
             _actualSpeedUpdateThrottole.InvokeAction();
         }
 
         protected override void OnCreate()
         {
             base.OnCreate();
-            
+
             _simulationSystem = World.GetOrCreateSystemManaged<SimulationSystem>();
 
-            Mod.Setting.onSettingsApplied += (Game.Settings.Setting setting) => {
+            Mod.Setting.onSettingsApplied += (Game.Settings.Setting setting) =>
+            {
                 _displayActualSpeed.Update(DisplayActualSpeed);
                 _displayOnlyMode.Update(DisplayOnlyMode);
             };
@@ -68,7 +70,8 @@ namespace AdvancedSimulationSpeed.Systems
 
             AddBinding(new TriggerBinding(BindGroupName, "refresh", Refresh));
             AddBinding(new TriggerBinding<float>(BindGroupName, "setSpeed", (v) => SelectedSpeed = v));
-            AddBinding(new TriggerBinding<float>(BindGroupName, "selectSpeed", (n) => {
+            AddBinding(new TriggerBinding<float>(BindGroupName, "selectSpeed", (n) =>
+            {
                 var oldSpeed = GetSelectedSpeeed();
                 var newSpeed = Mod.Setting.ModeSelection switch
                 {
@@ -96,7 +99,8 @@ namespace AdvancedSimulationSpeed.Systems
             Mod.log.Info("UISystem OnCreate Done");
         }
 
-        protected override void OnUpdate() {
+        protected override void OnUpdate()
+        {
             base.OnUpdate();
 
             _actualSpeedUpdateThrottole.Update(World.Time.DeltaTime);
