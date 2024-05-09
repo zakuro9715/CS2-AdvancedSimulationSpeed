@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{C709A82A
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LibShared", "LibShared\LibShared.shproj", "{82E5D509-AF54-4030-A715-4FE1D5D70425}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +31,17 @@ Global
 		{FA4DE9FA-330B-4688-9BD5-079039D3B0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4DE9FA-330B-4688-9BD5-079039D3B0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA4DE9FA-330B-4688-9BD5-079039D3B0A0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{82E5D509-AF54-4030-A715-4FE1D5D70425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E5D509-AF54-4030-A715-4FE1D5D70425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F811BFC-CCAE-4D2D-907D-EF259FFD4098}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LibShared\LibShared.projitems*{41528723-3d05-441d-8b28-1b4f5e80f3f6}*SharedItemsImports = 5
+		LibShared\LibShared.projitems*{82e5d509-af54-4030-a715-4fe1d5d70425}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

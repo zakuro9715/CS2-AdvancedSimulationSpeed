@@ -1,0 +1,3 @@
+[submodule "LibShared"]
+	path = LibShared
+	url = git@github.com:zakuro9715/CS2-LibShared.git

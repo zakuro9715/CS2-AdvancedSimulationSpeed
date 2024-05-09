@@ -20,6 +20,7 @@ using Game;
 using Game.Modding;
 using Game.SceneFlow;
 using AdvancedSimulationSpeed.Systems;
+using LibShared.Localization;
 using Unity.Burst.CompilerServices;
 using System.Reflection;
 
@@ -36,20 +37,12 @@ namespace AdvancedSimulationSpeed
         public void OnLoad(UpdateSystem updateSystem)
         {
             log.Info(nameof(OnLoad));
-            var assembly = Assembly.GetAssembly(typeof(AdvancedSimulationSpeed.Mod));
-            foreach (var s in assembly.GetManifestResourceNames())
-                log.Info(s);
-
             if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
                 log.Info($"Current mod asset at {asset.path}");
 
             Setting = new Setting(this);
             Setting.RegisterInOptionsUI();
-
-            foreach (var locale in new Locales.LocaleLoader().LoadAll())
-            {
-                GameManager.instance.localizationManager.AddSource(locale.Key, locale.Value);
-            }
+            LocaleLoader.Load(log, GameManager.instance.localizationManager);
             AssetDatabase.global.LoadSettings(nameof(AdvancedSimulationSpeed), Setting, new Setting(this));
 
             updateSystem.UpdateAt<UISystem>(SystemUpdatePhase.UIUpdate);
