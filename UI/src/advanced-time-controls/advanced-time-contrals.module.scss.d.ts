@@ -5,9 +5,8 @@ export type Styles = {
   "button--right": string;
   "center-box": string;
   content: string;
-  "divider--left": string;
-  "divider--right": string;
   icon: string;
+  paused: string;
 };
 
 export type ClassNames = keyof Styles;

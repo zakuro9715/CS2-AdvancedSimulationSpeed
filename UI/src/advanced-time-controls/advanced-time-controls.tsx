@@ -33,7 +33,7 @@ export const AdvancedTimeControls: ModuleRegistryExtend =
     const actualSpeed = useValue(actualSpeed$);
     const displayOnlyMode = useValue(displayOnlyMode$);
     const displayActualSpeed = useValue(displayActualSpeed$);
-    //const paused = useValue(time.simulationPaused$);
+    const paused = useValue(time.simulationPaused$);
 
     selectedSpeed$.subscribe(requestRefresh);
 
@@ -79,7 +79,7 @@ export const AdvancedTimeControls: ModuleRegistryExtend =
       <>
         <Component {...otherProps}>{children}</Component>
         <div
-          className={`${fieldStyles.field} ${styles["advanced-time-controls"]}`}
+          className={`${fieldStyles.field} ${styles["advanced-time-controls"]} ${paused ? styles.paused : ""}`}
         >
           {!displayOnlyMode && left}
           {center}

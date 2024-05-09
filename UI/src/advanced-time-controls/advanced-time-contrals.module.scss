@@ -1,8 +1,12 @@
 ﻿.advanced-time-controls {
   --iconHeight: 19rem;
   --iconWidth: 19rem;
-
+  --iconColor: var(--accentColorNormal);
   --buttonWidth: 40rem;
+}
+
+.paused {
+  --iconColor: #f60000;
 }
 
 .content {
@@ -20,7 +24,6 @@
   width: var(--buttonWidth);
   height: 100%;
 
-  --iconColor: var(--accentColorNormal);
   background-color: var(--toolbarFieldColor);
   border: none;
 
