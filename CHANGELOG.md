@@ -1,4 +1,8 @@
-﻿## 1.1.0
+﻿## 1.1.1
+
+- Add Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
+
+## 1.1.0
 
 - Add Spanish translation by [elGendo87](https://twitter.com/elGendo87)
 - Add Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)

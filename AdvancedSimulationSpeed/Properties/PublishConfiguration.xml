@@ -65,9 +65,7 @@ You can contribute to the translation in the following ways:
 	<Dependency Id="74417" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog>
-- Add Spanish translation by [elGendo87](https://twitter.com/elGendo87)
-- Add Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
-- Tweak UI
+- Add Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="github" Url="https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed" />
