@@ -1,4 +1,10 @@
-﻿## 1.0.3
+﻿## 1.1.0
+
+- Add Spanish translation by [elGendo87](https://twitter.com/elGendo87)
+- Add Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
+- Tweak UI
+
+## 1.0.3
 
 - Optimize and cleanup UI Code.
 - Fix UI errors, no longer conflicts with Extra UI Screens Mod.

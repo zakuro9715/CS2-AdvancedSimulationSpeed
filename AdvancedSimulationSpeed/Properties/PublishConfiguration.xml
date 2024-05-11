@@ -58,15 +58,16 @@ You can contribute to the translation in the following ways:
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.0.3" />
+	<ModVersion Value="1.1.0" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="74417" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog>
-- Optimize and cleanup UI Code.
-- Fix UI errors, no longer conflicts with Extra UI Screens Mod.
+- Add Spanish translation by [elGendo87](https://twitter.com/elGendo87)
+- Add Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
+- Tweak UI
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="github" Url="https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed" />
