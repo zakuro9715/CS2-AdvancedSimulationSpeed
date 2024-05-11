@@ -36,9 +36,9 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 
 Thank you to the following people for their contributions:
 
-- Spanish translation by [elGendo87](https://twitter.com/elGendo87)
-- Korean translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
-- Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
+- español(Spanish) translation by [elGendo87](https://twitter.com/elGendo87)
+- 한국어(Korean) translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
+- 汉语(Simplified Chinese) translation by [baka-gourd](https://github.com/baka-gourd)
 
 ## Translation
 
