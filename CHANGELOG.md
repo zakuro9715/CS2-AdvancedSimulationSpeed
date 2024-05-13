@@ -1,4 +1,8 @@
-﻿## 1.1.1
+﻿## 1.1.2
+
+- Add Polish translation by [karmel68](https://crowdin.com/profile/karmel68)
+
+## 1.1.1
 
 - Add Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
 

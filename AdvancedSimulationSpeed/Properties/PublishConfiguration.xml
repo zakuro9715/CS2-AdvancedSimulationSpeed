@@ -38,6 +38,7 @@ The maximum speed is limited to 8x by the game code. Because of this limitation 
 
 Thank you to the following people for their contributions:
 
+- polski(Polish) translation by [karmel68](https://crowdin.com/profile/karmel68)
 - español(Spanish) translation by [elGendo87](https://twitter.com/elGendo87)
 - 한국어(Korean) translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
 - 汉语(Simplified Chinese) translation by [baka-gourd](https://github.com/baka-gourd)
@@ -59,14 +60,14 @@ You can contribute to the translation in the following ways:
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/advancedsimulationspeed.1674316/" />
 	<!--Version of the mod-->
-	<ModVersion Value="1.1.1" />
+	<ModVersion Value="1.1.2" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.*" />
 	<!--Dependency for the mod, can be set multiple times-->
 	<Dependency Id="74417" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
 	<ChangeLog>
-- Add Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
+- Add Polish translation by [karmel68](https://crowdin.com/profile/karmel68)
 	</ChangeLog>
 	<!--External link. supported types are discord, github, youtube, twitch, x, paypal, patreon-->
 	<ExternalLink Type="github" Url="https://github.com/zakuro9715/CS2-AdvancedSimulationSpeed" />
