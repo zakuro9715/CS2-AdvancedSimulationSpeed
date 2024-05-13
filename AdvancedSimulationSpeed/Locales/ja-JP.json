@@ -6,5 +6,7 @@
   "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "ステップモードにおける、ステップごとの増加量",
   "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "倍々モード（デフォルト）",
   "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "ステップモード",
-  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "ディスプレイモード"
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "ディスプレイモード",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "実際の速度を表示",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "実際のシミュレーション速度を表示"
 }
