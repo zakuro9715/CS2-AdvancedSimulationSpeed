@@ -1,0 +1,12 @@
+﻿{
+  "Options.SECTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod]": "Advanced Simulation Speed",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "Tryb",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.ModeSelection]": "Wybierz tryb dla wyboru prędkości symulacji.",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "Wartość stałego kroku",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.StepValue]": "Wartość zmiany na krok w trybie stałego kroku.",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[Doubler]": "Podwójny / Połowa (domyślne)",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[FixedStep]": "Stały krok",
+  "Options.AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.MODE[DisplayOnly]": "Tylko wyświetl",
+  "Options.OPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "Wyświetl aktualną prędkość",
+  "Options.OPTION_DESCRIPTION[AdvancedSimulationSpeed.AdvancedSimulationSpeed.Mod.Setting.DisplayActualSpeed]": "Wyświetla aktualną prędkość."
+}
