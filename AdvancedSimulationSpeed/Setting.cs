@@ -14,20 +14,19 @@
  * AdvancedSimulationSpeed. If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Colossal;
 using Colossal.IO.AssetDatabase;
 using Game.Modding;
 using Game.Settings;
 using Game.UI;
-using Game.UI.Widgets;
-using System.Collections.Generic;
 
 namespace AdvancedSimulationSpeed
 {
     [FileLocation(nameof(AdvancedSimulationSpeed))]
     public class Setting : ModSetting
     {
-        public const string kSection = "Main";
+        const string MainSection = "Main";
+        const string ActionsSection = "Actions";
+
 
         public Setting(IMod mod) : base(mod)
         {
@@ -42,21 +41,32 @@ namespace AdvancedSimulationSpeed
             DisplayOnly,
         }
 
-        [SettingsUISection(kSection)]
+        [SettingsUISection(MainSection)]
         public Mode ModeSelection { get; set; }
 
         private bool StepValueDisabled => ModeSelection != Mode.FixedStep;
 
         [SettingsUISlider(min = 0, max = 8, step = 1f, unit = Unit.kInteger)]
-        [SettingsUISection(kSection)]
+        [SettingsUISection(MainSection)]
         [SettingsUIDisableByCondition(typeof(Setting), "StepValueDisabled")]
         public float StepValue { get; set; }
         public float StepValueWhenLessThanOne => StepValue / 10;
 
 
-        [SettingsUISection(kSection)]
+        [SettingsUISection(MainSection)]
         public bool DisplayActualSpeed { get; set; }
 
+        [SettingsUISection(ActionsSection)]
+        [SettingsUIButton]
+        [SettingsUIConfirmation]
+        public bool ResetSettings
+        {
+            set
+            {
+                SetDefaults();
+                ApplyAndSave();
+            }
+        }
 
         public override void SetDefaults()
         {

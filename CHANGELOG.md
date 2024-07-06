@@ -1,4 +1,14 @@
-﻿## 1.1.1
+﻿## 1.2.0
+
+- Add ResetSettings button
+- Confirm to work with new game version 1.1.7f1(Economy 2.0 update)
+- Add German transalation by [Mimonsi](https://github.com/kosch104)
+
+## 1.1.2
+
+- Add Polish translation by [karmel68](https://crowdin.com/profile/karmel68)
+
+## 1.1.1
 
 - Add Simplified Chinese translation by [baka-gourd](https://github.com/baka-gourd)
 

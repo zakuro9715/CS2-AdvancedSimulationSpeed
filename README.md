@@ -17,7 +17,7 @@ AdvancedSimulationSpeed provides more options and more information.
 ## Features
 
 - Provide more simulation speed options like 0.25x or 8x.
-	- Multiple modes for selecting speed.
+- Multiple modes for selecting speed.
 	- Double / Harf speed (Default)
 	- Fixed step
 	- Display Only
@@ -27,11 +27,6 @@ AdvancedSimulationSpeed provides more options and more information.
 
 The maximum speed is limited to 8x by the game code. Because of this limitation is hard-coded, it cannot be changed by MOD.
 
-## Planned Features
-
-- Directry input value in textbox
-- Change option panel.
-
 ## Credits
 
 Thank you to the following people for their contributions:
@@ -39,6 +34,7 @@ Thank you to the following people for their contributions:
 - español(Spanish) translation by [elGendo87](https://twitter.com/elGendo87)
 - 한국어(Korean) translation by [TwotoolusFLY LSh.st](https://steamcommunity.com/id/dragontalk)
 - 汉语(Simplified Chinese) translation by [baka-gourd](https://github.com/baka-gourd)
+- Deutsch(German) translation by [Mimonsi](https://github.com/kosch104)
 
 ## Translation
 

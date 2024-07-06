@@ -21,8 +21,7 @@ using Game.Modding;
 using Game.SceneFlow;
 using AdvancedSimulationSpeed.Systems;
 using LibShared.Localization;
-using Unity.Burst.CompilerServices;
-using System.Reflection;
+using System.Collections.Generic;
 
 
 namespace AdvancedSimulationSpeed
@@ -42,7 +41,19 @@ namespace AdvancedSimulationSpeed
 
             Setting = new Setting(this);
             Setting.RegisterInOptionsUI();
-            LocaleLoader.Load(log, GameManager.instance.localizationManager);
+
+            var localizationManager = GameManager.instance.localizationManager;
+            foreach (var locale in localizationManager.GetSupportedLocales())
+            {
+                localizationManager.AddSource(locale, new AliasesLocaleSource(localizationManager, new Dictionary<string, string>
+                {
+                    { Setting.GetOptionLabelLocaleID(nameof(Setting.ResetSettings)), "Options.OPTION[GeneralSettings.resetSettings]" },
+                    { Setting.GetOptionDescLocaleID(nameof(Setting.ResetSettings)), "Options.OPTION_DESCRIPTION[GeneralSettings.resetSettings]" },
+                    { Setting.GetOptionWarningLocaleID(nameof(Setting.ResetSettings)), "Options.OPTION_DESCRIPTION[GeneralSettings.resetSettings]" },
+                }));
+            }
+            LocaleLoader.Load(log, localizationManager);
+
             AssetDatabase.global.LoadSettings(nameof(AdvancedSimulationSpeed), Setting, new Setting(this));
 
             updateSystem.UpdateAt<UISystem>(SystemUpdatePhase.UIUpdate);
